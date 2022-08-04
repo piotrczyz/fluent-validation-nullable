@@ -35,6 +35,10 @@ public class WeatherForecastController : ControllerBase
     [Route("ValidateParams")]
     public IActionResult ValidateParams(ParamsRequest request)
     {
-        return Ok();
+        // You need to check ModelState
+        // and respond accordingly, typically with BadRequest
+        return ModelState.IsValid 
+            ? Ok() 
+            : BadRequest(ModelState);
     }
 }

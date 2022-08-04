@@ -1,12 +1,18 @@
-using System.Reflection;
 using FluentValidation;
+using FluentValidation.AspNetCore;
+using Validators;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
-builder.Services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+
+// NuGet Package: FluentValidation.AspNetCore
+builder.Services.AddFluentValidation();
+
+// Be sure to add the correct validator assembly
+builder.Services.AddValidatorsFromAssembly(typeof(ParamsRequest).Assembly);
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
