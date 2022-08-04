@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalApi", "MinimalApi\MinimalApi.csproj", "{5B80F79B-EA23-44AB-BE11-BA24C137B872}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validators", "Validators\Validators.csproj", "{FE8D002B-A0C9-4F29-A311-43467F798B19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B80F79B-EA23-44AB-BE11-BA24C137B872}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B80F79B-EA23-44AB-BE11-BA24C137B872}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B80F79B-EA23-44AB-BE11-BA24C137B872}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B80F79B-EA23-44AB-BE11-BA24C137B872}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE8D002B-A0C9-4F29-A311-43467F798B19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE8D002B-A0C9-4F29-A311-43467F798B19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE8D002B-A0C9-4F29-A311-43467F798B19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE8D002B-A0C9-4F29-A311-43467F798B19}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
